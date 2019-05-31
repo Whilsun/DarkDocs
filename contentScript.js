@@ -33,9 +33,27 @@ function colors(input, setColor) {
 
 
 
-colors(foreground, foregroundColor);
-colors(background, backgroundColor);
+window.onload(colors(foreground, foregroundColor), colors(background, backgroundColor));
 
+
+//      |    TEMPORARY BAD SOLUTION      |
+//      V                                V
+//while(!document.body.contains("docs-explore-widget-button")) {
+//    colors(foreground, foregroundColor);
+//    colors(background, backgroundColor);
+//}
+
+
+
+//
+// TODO:
+//  - check dif between a class and an id and adjust accordingly
+//  - constant check current page count v last page count
+//  - after check, run colors func again
+//  - get a frickin graphic designer
+//  - ???
+//  - profit
+//  
 
 
 
