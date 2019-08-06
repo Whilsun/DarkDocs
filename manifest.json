@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Dark Docs",
   "author": "Whilsun, The Anarthrous",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Dark Theme for Docs, Drive(?), Git(?)",
   "permissions": [
     "*://docs.google.com/*",
@@ -22,11 +22,11 @@
   "content_scripts": [
     {
       "matches": [
-        "*://docs.google.com/*"
+        "*://docs.google.com/document/*"
       ],
       "js": [ "contentScript.js" ],
       "all_frames": true,
-      "run_at": "document_end"
+      "run_at": "document_idle"
     }
   ]
 }
