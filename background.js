@@ -11,7 +11,7 @@ function onTabUpdate(tab) {
             return;
         }
         
-        if (url.hostname == "docs.google.com" || url.hostname == "docs.microsoft.com") {
+        if (url.hostname == "docs.google.com") {
             chrome.tabs.insertCSS({
                 file: "docsgoogle.css",
                 runAt: "document_start",

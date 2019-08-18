@@ -9,9 +9,7 @@
   },
   "permissions": [
     "*://docs.google.com/*",
-    "*://docs.microsoft.com/*",
     "activeTab"
-
   ],
   "background": {
     "scripts": [
